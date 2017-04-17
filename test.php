@@ -1,5 +1,5 @@
 <?php
-
+//php7.1.1
 
 include("classes.php");
 include("helperFunctions.php");
@@ -86,6 +86,10 @@ $Toad = new Reptile(2,0,15,"Frog","Green"); // ($lifespan, $age, $price, $breed,
 print_r($Toad);
 
 echo $Toad->get_type();
+
+
+
+
 
 
 ?>
