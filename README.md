@@ -1,4 +1,5 @@
 # petshopBA
+//php7.1.1
 
 index.php is the main file--you should be able to run that out of the gate.  I'm not sure how github stores sqlite3 DBs, So
 you may need to uncomment my dropTable function if the database is already populated.  Once you create the database once you should leave that uncommented 
