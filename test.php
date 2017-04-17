@@ -4,11 +4,11 @@
 include("classes.php");
 include("helperFunctions.php");
 
-$Inventory = array();
+
 
 // DID NOT WRITE THIS
 ///////////////////////////////////////////////////////////////////////////
-echo '4';
+
 function print_vars($obj)
 {
     foreach (get_object_vars($obj) as $prop => $val) {
@@ -88,7 +88,9 @@ print_r($Toad);
 echo $Toad->get_type();
 
 
-
+//listAllCLI();
+//$order = 'price';            order needs to be col name in DB
+//orderByCLI($order);
 
 
 

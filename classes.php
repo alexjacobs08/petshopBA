@@ -27,7 +27,7 @@ abstract class Pet extends Item
 
         $this->lifespan = $lifespan;
         $this->age = $age;
-
+                                                        //discount logic
         if ($age > ($lifespan/2))
             $price = ($price / 2);
         parent:: __construct($price);

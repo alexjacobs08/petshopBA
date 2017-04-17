@@ -1,7 +1,7 @@
 <?php
 //php7.1.1
 
-
+//these should remain commented--mostly here as a list of all the functions in this file
 //dropTable('Inventory');
 //createInventoryTable();
 
@@ -13,6 +13,7 @@
 //listAll();
 //orderBy($order,$direction);
 //orderByCLI($order); for running in command line as opposed to orderBy($order) which is for web
+
 
 function dropTable($table)
 {
@@ -42,7 +43,6 @@ function createInventoryTable()
                     breed TEXT,
                     color TEXT,
                     kind TEXT,
-
                     perishable TEXT,
                     animal_for TEXT,
                     material TEXT
@@ -326,7 +326,7 @@ function orderBy($order,$direction)
             {
                 echo "<tr>";
                 echo "<td>" . $row['p_id'] . "</td>";
-                echo money_format("<td>$%i</td>", $row['price']);
+                echo "<td>$" . $row['price'] . "</td>";
                 echo "<td>" . $row['age'] . "</td>";
                 echo "<td>" . $row['lifespan'] . "</td>";
                 echo "<td>" . $row['breed'] . "</td>";
@@ -345,7 +345,7 @@ function orderBy($order,$direction)
             {
                 echo "<tr>";
                 echo "<td>" . $row['p_id'] . "</td>";
-                echo money_format("<td>$%i</td>", $row['price']);
+                echo "<td>$" . $row['price'] . "</td>";
                 echo "<td>" . $row['kind'] . "</td>";
                 echo "<td>" . $row['perishable'] . "</td>";
                 echo "<td>" . $row['animal_for'] . "</td>";
@@ -363,7 +363,7 @@ function orderBy($order,$direction)
             {
                 echo "<tr>";
                 echo "<td>" . $row['p_id'] . "</td>";
-                echo money_format("<td>$%i</td>", $row['price']);
+                echo "<td>$" . $row['price'] . "</td>";
                 echo "<td>" . $row['kind'] . "</td>";
                 echo "<td>" . $row['material'] . "</td>";
                 echo "<td>" . $row['perishable'] . "</td>";
@@ -381,7 +381,7 @@ function orderBy($order,$direction)
             {
                 echo "<tr>";
                 echo "<td>" . $row['p_id'] . "</td>";
-                echo money_format("<td>$%i</td>", $row['price']);
+                echo "<td>$" . $row['price'] . "</td>";
                 echo "<td>" . $row['kind'] . "</td>";
                 echo "<td>" . $row['material'] . "</td>";
                 echo "<td>" . $row['animal_for'] . "</td>";
@@ -447,10 +447,17 @@ function orderByCLI($order)
             echo "Perishable: " . $row['perishable'] . "\n";
         }
 
+        if ($row['material'] !== null)
+        {
+            echo "Material: " . $row['material'] . "\n";
+        };
+
         if ($row['animal_for'] !== null)
         {
             echo "Animal For: " . $row['animal_for'] . "\n";
         };
+
+
 
         echo "\n";
     }

@@ -5,7 +5,7 @@ include('helperFunctions.php');
 include("classes.php");
 include("Inventory.php");
 
-//dropTable("Inventory");  uncomment this to start from scratch
+dropTable("Inventory");  //uncomment this to start from scratch
 createInventoryTable();
 
 insertReptile($reptile_inventory);

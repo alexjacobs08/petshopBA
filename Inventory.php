@@ -23,7 +23,7 @@ $dog_inventory = [
     array(12,4,100,"Retriever","Yellow"),
     array(15,8,115,"Lab","Black"),
     array(10,2,20,"Poodle","White"),
-    array(20,7,45,"Boxer","Brown"),
+    array(12,7,45,"Boxer","Brown"),
     array(9,6,75,"Shih Tzu","White"),
 ];
 
